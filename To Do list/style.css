@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    background-image: url(wallpaperflare.com_wallpaper.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .box{
+    /* height: 300px; */
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px black;
+    border-radius: 5px;
+
+}
+h2{
+  text-align: center;
+}
+
+main .box .task{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(300px - 1.5rem);
+    font-weight: 14px;
+    position: relative;
+}
+
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    top: 10px;
+    position: absolute;
+    /* padding-left: 20px; */
+    margin-bottom: 25px;
+
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    /* border-radius: 40px; */
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    background: linear-gradient(rgb(243, 104, 104),rgb(161, 161, 255));
+}
+
+
+ul{
+  width: 80%;
+  position: absolute;
+  top: 60px;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 17px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-image: url(nature1.jpeg);
+  background-size: cover;
+  background-position: center;
+  /* top: 12px; */
+  left: -25px;
+  
+}
+
+  ul li.checked{
+    text-decoration: line-through;
+  }
+  
+  ul li.checked::before{
+    background-image: url(/wallpaperflare.com_wallpaper.jpg);
+  }
+  ul li span{
+    position: absolute;
+    right: 0;
+    /* top: 5px; */
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    color:#2e2222;
+    text-align: center;
+  }
+
+ul li span:hover{
+  background-color: #edeef0;
+  border-radius: 50%;
+
+}
